@@ -1,0 +1,354 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #150259;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Navigation */
+nav {
+  background-color: #4630d9;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+}
+
+main section {
+  width: 48%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+main section h2 {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Navigation Base Styles (from earlier) */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  position: relative;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: block;
+}
+
+p {
+  text-align: justify;
+}
+
+.centered-profile {
+  text-align: center;
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #555;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #666;
+}
+
+header {
+  background-color: #150259;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Container for logo and heading */
+.logo-title {
+  display: flex;
+  align-items: center;
+  /* vertically center */
+  justify-content: flex-start;
+  /* align items to the left */
+  gap: 10px;
+}
+
+/* Logo image styling */
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.small_header {
+  background-color: #150259;
+  color: #fff;
+  text-align: left;
+  padding: 1rem;
+}
+
+/* Flex container */
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+  /* spacing between main and sidebar */
+  padding: 20px;
+}
+
+/* Main section: take more space */
+.main-content {
+  flex: 3;
+  /* takes 3 parts */
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Sidebar section: take less space */
+.sidebar {
+  flex: 1;
+  /* takes 1 part */
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sticky-header {
+  max-height: 100px;
+  position: sticky;
+  top: 0px;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  z-index: 1000; /* ensures it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* optional: gives it a subtle shadow */
+}
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  margin-right: 25px;
+  overflow: hidden;
+  border: 12px solid #0477BF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Individual white box */
+.info-box {
+  flex: 1;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* Text inside boxes */
+.info-box h3 {
+  font-size: 20px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.info-box a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.table {
+  text-align: center;
+  border: 1px;
+}
+
+.table_heading {
+  background-color: #150259;
+  color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  /* Optional: removes double borders */
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Admin Section */
+.admin-box {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Layout for Personnel */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.person-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.person-box h3 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.person-box p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.centered-body {
+  width: 77%;
+  margin: 0 auto;
+  /* Centers the element horizontally */
+}
+
+/* CSS */
+.rounded-img {
+  border-radius: 15px;
+  width: 200px;
+}
+
+.fancy-img {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+}
+
+.fancy-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.background {
+  background-image: url('image/Blue.jpg');
+}
