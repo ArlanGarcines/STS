@@ -16,14 +16,12 @@ header {
   background-color: #150259;
   color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 5px;
 }
 
-/* Navigation */
 nav {
-  background-color: #4630d9;
+  font-size: 15px;
 }
-
 nav ul {
   list-style: none;
   display: flex;
@@ -115,6 +113,7 @@ p {
 
 .dropdown-menu li {
   margin: 0;
+  text-align: left;
 }
 
 .dropdown-menu li a {
@@ -143,12 +142,12 @@ header {
   /* vertically center */
   justify-content: flex-start;
   /* align items to the left */
-  gap: 10px;
+  gap: 7px;
 }
 
 /* Logo image styling */
 .logo {
-  height: 50px;
+  height: 40px;
   width: auto;
 }
 
@@ -186,12 +185,11 @@ header {
 }
 
 .sticky-header {
-  max-height: 100px;
+  max-height: 90px;
   position: sticky;
   top: 0px;
-  background-color: #333;
   color: white;
-  padding: 1rem;
+  padding: .7rem;
   z-index: 1000; /* ensures it stays above other content */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* optional: gives it a subtle shadow */
 }
