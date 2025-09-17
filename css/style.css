@@ -114,6 +114,7 @@ p {
 .dropdown-menu li {
   margin: 0;
   text-align: left;
+ 
 }
 
 .dropdown-menu li a {
@@ -129,6 +130,10 @@ p {
   background-color: #666;
 }
 
+.dropdown {
+  font-size: 15px;
+  
+}
 header {
   background-color: #150259;
   color: #fff;
